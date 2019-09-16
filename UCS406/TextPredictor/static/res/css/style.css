@@ -1,0 +1,158 @@
+header {
+	background-color: chocolate;
+	border-style: solid;
+	box-shadow: 5px 5px;
+	width: 200px;
+	border-width: 2px;
+	border-radius: 20px;
+	border-color: black;
+	height: 40px;
+	font-family: monospace;
+	align-content: center;
+	color:black;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+#bo {
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	background-color: greenyellow;
+	width: inherit;
+	font-family: monospace;
+	font-size: 18px;
+	font-weight: bold;
+}
+#it {
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	background-color: greenyellow;
+	width: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#un {
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	background-color: greenyellow;
+	width: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#sa {
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	background-color:crimson;
+	width: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#lo {
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	background-color:crimson;
+	width: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#del {
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	background-color: darkslateblue;
+	width: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#new2 {
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	background-color:burlywood;
+	width: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#fsize {
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	background-color: white;
+	width: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#ffamily {
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	color:forestgreen;
+	width: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#color {
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	color:red;
+	width: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#fname {
+	border-width: 3px;
+	border-color: brown;
+	color:red;
+	width: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+#showbox {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	border-color: black;
+	background-color: white;
+	height: 400px;
+	width: 800px;
+	font-size: 18px;
+	text-align: left;
+	padding: 5px;
+	box-shadow: 5px 5px 8px 2px black;
+}
+#wordBox {
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	height: 100px;
+	width: 300px;
+	font-size: 18px;
+	text-align: left;
+	padding: 5px;
+	background-color: white;
+	overflow-y: scroll;
+}
+
+#wordBox button{
+	width: 100%;
+}
+
+body {
+	background-image: url('Background.jpeg');
+}

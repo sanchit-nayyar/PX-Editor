@@ -1,0 +1,65 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PX Editor</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'res/css/style.css' %}">
+</head>
+
+<body>
+    <center>
+	<header>PX Editor</header>
+        <br>
+        <br>
+	<button onclick="document.execCommand('bold');" id = "bo">B</button>
+	<button onclick="document.execCommand('italic');" id = "it">I</button>
+	<button onclick="document.execCommand('underline');" id = "un">U</button>
+
+	<button onclick="saveDoc();" id = "sa">Save</button>
+	<button onclick="loadDoc();" id = "lo">Load</button>
+	<button onclick="rmDoc();" id = "del">Delete</button>
+	<button onclick="freshDoc();" id = "new2">New Doc</button>
+
+	<input type="number" placeholder="FontSize (1 - 7)" onchange="updateSize();" id="fsize">
+	<select id="ffamily" onchange="updateFont();">
+		<option selected disabled>Font Family</option>
+		<option value="Arial">Arial</option>
+		<option value="Times New Roman">Times New Roman</option>
+		<option value="Calibri">Calibri</option>
+		<option value="Arial">Arial</option>
+		<option value="Arial">Arial</option>
+		<option value="Arial">Arial</option>
+		<option value="Arial">Arial</option>
+		<option value="Arial">Arial</option>
+	</select>
+	<select onchange="updateColor();" id="color">
+		<option selected disabled>Color</option>
+		<option value="#FF0000">Red</option>
+		<option value="#0000FF">Blue</option>
+		<option value="#00FF00">Green</option>
+		<option value="#800080">Purple</option>
+		<option value="#0000FF">Blue</option>
+		<option value="#0000FF">Blue</option>
+		<option value="#0000FF">Blue</option>
+		<option value="#0000FF">Blue</option>
+		<option value="#0000FF">Blue</option>
+	</select>
+	<br><hr height = "2px" color = "black" width = "900px"><br>
+	<input type="text" id="fName" placeholder="File Name">
+	<input type="hidden" name="" onkeypress="console.log(code(event));">
+        <br>
+        <br>
+	<div id="showbox" onkeypress="test(event);" contenteditable></div>
+        <br>
+	<div id="wordBox"></div>
+    </center>
+    
+    <script type="text/javascript" src="{% static 'res/js/storageFunctions.js' %}"></script>
+	<script type="text/javascript" src="{% static 'res/js/formatting.js' %}"></script>
+	<script type="text/javascript" src="{% static 'res/js/trie_module.js' %}"></script>
+	<script type="text/javascript" src="{% static 'res/js/trie_words.js' %}"></script>
+	<script type="text/javascript" src="{% static 'res/js/replacement_updated.js' %}"></script>
+</body>
+</html>
